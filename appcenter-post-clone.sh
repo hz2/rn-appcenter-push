@@ -12,7 +12,7 @@ echo 'Setting AppSecrets'
 cd .. && ./scripts/update-app-secrets.sh PROD && cd DemoApp
 
 echo 'Add private cocoapods repository'
-pod repo add $REPO_NAME https://$USER_ACCOUNT:$ACCESS_TOKEN@$PRIVATE_REPO_BASE_URL/$REPO_NAME
+# pod repo add $REPO_NAME https://$USER_ACCOUNT:$ACCESS_TOKEN@$PRIVATE_REPO_BASE_URL/$REPO_NAME
 pod repo update
 cd ios && pod install
 
